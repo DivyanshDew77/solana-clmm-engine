@@ -2,6 +2,12 @@ use anchor_lang::prelude::*;
 
 declare_id!("Ddy2wHW8ZGgtVgPCoriZs9FtcsxkbwLTT2Gxzjyg1KPq");
 
+pub mod state;
+pub mod instructions;
+
+use state::*;
+use instructions::*;
+
 #[program]
 pub mod solana_clmm_engine {
     use super::*;
